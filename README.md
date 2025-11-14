@@ -99,5 +99,38 @@ Eng qimmatli joylar:
 🔹 /uploads/
 🔹 /private/
 
+---
 
+🟧 Dirbning kuchli tomonlari
 
+  - Juda tez ishlaydi
+  - Kam resurs yeydi
+  - CLI’dan boshqarish qulay
+  - Wordlist’lar juda ko‘p
+  - Bruteforce logikasi yaxshi
+
+🟥 Dirbning cheklovlari
+
+  - WAF (Cloudflare, ModSecurity) kuchli joylarda bloklanishi mumkin
+  - Ko‘p redirect’lar bo‘lsa, chalg‘ib ketishi mumkin
+  - Dinamik sayt strukturasini to‘liq topmaydi
+  - Rate-limit bor joylarda blok hozir bo‘ladi
+Shu sababli uni gobuster, feroxbuster, wfuzz bilan birga ishlatish optimal.
+
+---
+
+🟧 Real misol (amaliy)
+
+Saytni common.txt bilan skan qilish:
+```
+dirb https://target.uz /usr/share/wordlists/dirb/common.txt -r
+```
+
+Natijalar:
+```
+==> DIRECTORY: https://target.uz/admin/
+==> DIRECTORY: https://target.uz/uploads/
+==> FILE: https://target.uz/robots.txt
+==> CODE:403: https://target.uz/private/
+```
+👉 403 chiqsa ham katalog mavjud degani — bu juda muhim!
