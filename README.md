@@ -28,5 +28,22 @@ Sayt kod qaytarsa (200/301/302), dirb uni topilgan deb belgilaydi.
 ```
 dirb http://example.com
 ```
+
 Natijada default wordlist bilan bruteforce qiladi.
+
 ---
+🟧 Wordlist bilan ishlatish (tavsiya qilingan usul)
+
+```
+dirb http://example.com /usr/share/wordlists/dirb/common.txt
+```
+Yoki katta ro‘yxat:
+```
+dirb http://example.com /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
+---
+
+🟧 HTTPS saytlar uchun:
+```
+dirb https://example.com
+```
