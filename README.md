@@ -21,3 +21,12 @@ Masalan:
   - http://example.com/upload → mavjudmi?  
   - http://example.com/test/ → mavjudmi?
 Sayt kod qaytarsa (200/301/302), dirb uni topilgan deb belgilaydi.
+
+--- 
+
+🟧 Oddiy foydalanish
+```
+dirb http://example.com
+```
+Natijada default wordlist bilan bruteforce qiladi.
+---
