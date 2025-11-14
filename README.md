@@ -9,3 +9,15 @@ U quyidagilarni aniqlashga yordam beradi:
   - Yangi joylangan yoki unutilgan test kataloglari
 
 Dirb aslida dirbusterning CLI versiyasi deb qaraladi.
+
+---
+
+🟧 Qanday ishlaydi?
+
+Dirb wordlist (so‘zlar ro‘yxati) asosida URL’larni tekshiradi.
+
+Masalan:
+  - http://example.com/admin → mavjudmi?
+  - http://example.com/upload → mavjudmi?  
+  - http://example.com/test/ → mavjudmi?
+Sayt kod qaytarsa (200/301/302), dirb uni topilgan deb belgilaydi.
