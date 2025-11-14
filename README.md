@@ -1,4 +1,4 @@
-🟧 #Dirb nima?
+🟧 Dirb nima?
 
 dirb — bu web content scanner, ya’ni saytning yashirin papka (directories) va fayllarini topish uchun ishlatiladigan URL bruteforce vositasi.
 
